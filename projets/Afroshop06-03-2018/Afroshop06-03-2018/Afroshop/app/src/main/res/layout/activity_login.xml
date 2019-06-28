@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_login"
+    tools:context="com.tsafack.tkswif.afroshop.gestionDesUtilisateurs.activities.LoginActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_app_logo"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/logo"
+            android:id="@+id/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/afro"
+            android:layout_toLeftOf="@id/logo"
+            android:layout_toStartOf="@id/logo"
+            android:layout_marginTop="18dp"
+            android:elevation="15dp"
+            android:textSize="23sp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop"
+            android:layout_toRightOf="@id/logo"
+            android:layout_toEndOf="@id/logo"
+            android:layout_marginTop="18dp"
+            android:elevation="15dp"
+            android:textSize="23sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorWhite"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/se_connecter_avec"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#00aa8d"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <include layout="@layout/social_login_layout"
+                    android:id="@+id/socialLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="2sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="#a000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ou"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="#a000"/>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login_input_layout_pseudo"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/login_input_pseudo"
+                        android:hint="@string/pseudo"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:ellipsize="end"
+                        android:textColorHint="#a0000000"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login_input_layout_password"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/login_input_password"
+                        android:hint="@string/mot_de_passe"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:textColorHint="@color/colorGray"
+                        android:ellipsize="end"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="3dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="@string/connexion"
+                    android:textColor="#fff"
+                    android:id="@+id/login_input_submit"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mot_de_passe_oubli"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#e000"
+                    android:id="@+id/login_text_forgotpass"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/inscription"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/login_text_signup"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

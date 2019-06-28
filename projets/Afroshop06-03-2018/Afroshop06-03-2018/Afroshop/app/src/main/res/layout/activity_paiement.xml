@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsafack.tkswif.afroshop.gestionDesCommandes.gestionDesPaiements.activities.PaiementActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:background="@color/blanc">
+
+
+            <TextView
+                android:id="@+id/textePaiement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paiement_entete"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                tools:layout_editor_absoluteX="16dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo_pay_with_paydunya3"
+
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/paypal"
+                android:onClick="onBuyPressed"
+                android:clickable="true"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/stripe1"
+                android:clickable="true"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="358dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

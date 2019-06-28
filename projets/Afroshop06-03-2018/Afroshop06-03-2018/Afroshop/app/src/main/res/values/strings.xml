@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">Afroshop Module 1</string>
+    <string name="se_connecter_avec">Se connecter avec</string>
+    <string name="ou">Ou</string>
+    <string name="pseudo">Email</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié ?</string>
+    <string name="inscription">Inscription</string>
+    <string name="utiliser_un_compte_existant">Utiliser un compte existant</string>
+    <string name="cr_er_un_compte_afro_shop">Créer un compte Afro-Shop</string>
+    <string name="nom">Nom*</string>
+    <string name="prenom">Prénom*</string>
+    <string name="email">Email*</string>
+    <string name="num_ro_de_t_l_phone">Numéro de téléphone*</string>
+    <string name="date_de_naissance">Date de Naissance*</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="en_vous_inscivant_vous_acceptez_de_respecter">En vous inscivant vous acceptez</string>
+    <string name="nos_termes_et_contions_d_utilisation">nos termes et contions d\'utilisation</string>
+    <string name="d_j_un_compte">Déjà un compte ?</string>
+    <string name="champs_obligatoires">* Champs Obligatoires</string>
+    <string name="logo">Logo</string>
+    <string name="twitter_account">Twitter Account</string>
+    <string name="google_account">Google Account</string>
+    <string name="linked_account">Linked Account</string>
+    <string name="facebook_account">Facebook Account</string>
+    <string name="afro">AFRO</string>
+    <string name="shop">SHOP</string>
+    <string name="afroshop">Afroshop</string>
+    <string name="commencer">Commencer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ville">Ville*</string>
+    <string name="localit">Localité*</string>
+    <string name="confirmez_votre_mot_de_passe">Confirmez votre mot de passe</string>
+    <string name="mot_de_passe0">Mot de passe*</string>
+    <string name="erreur_confirm_password">Les mots de passe que vous avez entre ne correspondent pas</string>
+    <string name="extreme_nord">Extreme-nord</string>
+    <string name="nord">Nord</string>
+    <string name="adamaoua">Adamaoua</string>
+    <string name="centre">Centre</string>
+    <string name="est">Est</string>
+    <string name="nord_ouest">Nord-Ouest</string>
+    <string name="ouest">Ouest</string>
+    <string name="sud_ouest">Sud-Ouest</string>
+    <string name="littoral">Littoral</string>
+    <string name="sud">Sud</string>
+    <string name="pays_cameroun">Cameroun</string>
+    <string name="erreur_champ_non_remplis">Veuillez remplir tous les champs</string>
+    <string name="message_deja_logger">Vous avez déjà été logger.</string>
+    <string name="erreur_convertion">Erreur de convertion JSON</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations"> Modifier votre compte (vos information personnelle ) ici
+    </string>
+
+    <string name="pref_title_compte"> Mon Compte</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_listes_">Listes des Agents</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in"> Inscrire </string>
+    <string name="no_regiter_text"> Inscription </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_scrolling">Inscription</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_inscriptions">Inscription</string>
+    <string name="title_activity_acceuil">Acceuil</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_title">
+       <item>Employe</item>
+       <item>Employeur</item>
+   </string>
+    <string name="title_activity_login">Connexion</string>
+    <dimen name="slide_title">30dp</dimen>
+    <string name="title_activity_commande_">Mes Commandes</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_product_">Mes Produits</string>
+    <string name="title_activity_produit_">Mes Produit</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+
+    <string name="pref_title_display_name"> Modifier Son Email </string>
+
+
+    <!-- Example settings for Data & Sync -->
+
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+
+    <!-- Example settings for Notifications -->
+
+    <!--  ici  j'au mis les variables relatif aux
+        -->
+    <string name="nous_ecire"> Nous ecrire </string>
+    <string name="compte_utilisateur"> Aide </string>
+    <string name="regleDeConfidentialite"> Regle de Confidentialite</string>
+    <string name="update_application"> Mise a jour </string>
+    <string name="version"> Version Afroshop </string>
+    <string name="motDepasse">Modifier mon Mot de passe</string>
+    <string name="sonneries">Sonneries</string>
+    <string name="aide">Sonneries</string>
+    <string name="bug">Sonneries</string>
+    <string name="toolbar_activity_chat_message">Message</string>
+    <string name="edit_message_hint_activity_chat_message">Entrer votre message</string>
+    <string name="toolbar_activity_commande_detaille_recu">Produit</string>
+    <string name="chater_button_commande_detaille_recu">Tchater</string>
+    <string name="titre_description_commande_">Description</string>
+    <string name="titre_date_commande_">Date</string>
+    <string name="titre_quantite_commande_">Quantité</string>
+    <string name="titre_prix_commande">Prix</string>
+    <string name="chater_button_commande">Chater</string>
+    <string name="annuler">Annuler</string>
+    <string name="toolbar_activity_commande_details">Produit</string>
+    <string name="payer">Payer</string>
+    <string name="nom_produit_hint">Nom du produit</string>
+    <string name="selection_image_button">Image</string>
+    <string name="quantite_hint">Quantité (en Kilogrammes)</string>
+    <string name="pays">Pays</string>
+    <string name="region">Région</string>
+    <string name="enregistrer_button">ENREGISTRER</string>
+    <string name="alerte_enregistrement">*veuillez renseigner tous les champs SVP</string>
+    <string name="categorie">Catégorie</string>
+    <string name="agent_titre">Agent de contrôle</string>
+    <string name="nom_hint">Nom</string>
+    <string name="telephone_hint">Téléphone</string>
+    <string name="sujet_hint">Objet</string>
+    <string name="envoyer_button">Envoyer</string>
+    <string name="paiement_entete">VEUILLEZ CHOISIR VOTRE MODE DE PAIEMENT</string>
+    <string name="pesticides">Pesticides</string>
+    <string name="informations_personnelles">Informations personnelles</string>
+    <string name="pr_nom">Prenom</string>
+    <string name="adresse">adresse</string>
+    <string name="informations_du_compte">Informations du compte</string>
+    <string name="confirmer_mot_de_passe">Confirmer le mot de passe</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="nom_d_utilisateur">nom d\'utilisateur</string>
+    <string name="informations_g_n_rales">Informations générales</string>
+    <string name="cat_gorie">Catégorie</string>
+    <string name="description">Description</string>
+    <string name="image_produit">Image produit</string>
+
+    <string name="action_voice_rec">action voice rec</string>
+    <string name="action_location">action location</string>
+    <string name="action_taxi">action taxi</string>
+    <string name="action_change_colors">change style</string>
+    <string name="color_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_example_with_sliding_list">Sliding list</string>
+    <string name="action_example_sliding_search_bar">Sliding search view</string>
+    <string name="random_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum lorem ac leo tincidunt varius. Donec lacinia elementum lobortis. Nulla pellentesque cursus sem. Aliquam vestibulum lacinia metus, ac faucibus nunc fringilla a. Nullam mauris lorem, pharetra vitae mollis in, gravida a mi. Sed eu elit vitae lorem vestibulum volutpat eget blandit tortor. Duis dignissim porta dolor, ut porttitor lectus pretium vitae.  Phasellus quis augue ante. Nam tempus egestas consectetur. Praesent nec placerat nisi, non malesuada dolor. Duis malesuada semper lorem, nec feugiat nisl. Nulla facilisi. Sed aliquam ex ut turpis malesuada dignissim. Nam risus mi, dapibus maximus nisl ac, efficitur suscipit ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec malesuada nisl eget faucibus mollis. Nam sit amet mauris a metus euismod porttitor et sed mi. Nunc vel vehicula arcu, eu lacinia odio. Fusce id lacus vel dui blandit maximus id eget neque.  Sed eu porta diam. Nunc vitae egestas diam. Donec semper hendrerit laoreet. Aliquam quis aliquam nulla. Aenean euismod lacus sed pretium scelerisque. Suspendisse mollis arcu at ligula pulvinar, nec elementum velit fermentum. Sed sed mollis ligula, vel eleifend metus. Sed magna metus, tempus ut bibendum at, aliquam at nisi. Integer nec fringilla mauris, vel viverra augue. Morbi eu mi mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Proin molestie ante nec tristique finibus. In hac habitasse platea dictumst. Maecenas sed risus condimentum, feugiat velit ac, dictum erat. Curabitur pharetra ac nulla sed lacinia. Curabitur rutrum dolor vestibulum magna ultrices congue ac sed libero. Nam semper mi a neque ultricies commodo. In condimentum in odio in porttitor. Suspendisse maximus vestibulum nunc, vel gravida dui fermentum eu. Morbi sed orci augue. Praesent dolor justo, cursus sit amet ex et, posuere mattis lorem. Donec in efficitur orci. Nam semper odio a interdum aliquet. Vivamus vitae luctus purus, in fermentum diam. Pellentesque quis orci vitae est placerat faucibus. Maecenas non gravida ipsum, sit amet ultrices sem. Phasellus fringilla ultrices erat, vel aliquam sapien varius ac.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam porta semper sapien. Pellentesque volutpat porta sapien, ut tristique metus. In hac habitasse platea dictumst. Aenean pharetra molestie dapibus. Nunc sed dolor elit. Quisque eget enim non tellus volutpat mollis a id dolor. Aenean sit amet sem sem. Nunc viverra efficitur lorem. Quisque quis metus dictum, mattis ante non, pellentesque sapien. Integer quis lectus feugiat, consectetur nulla quis, viverra nulla. Curabitur eu sodales nisl. Morbi non enim pellentesque, lobortis est id, dignissim mauris. Nulla et tempor lectus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum lorem ac leo tincidunt varius. Donec lacinia elementum lobortis. Nulla pellentesque cursus sem. Aliquam vestibulum lacinia metus, ac faucibus nunc fringilla a. Nullam mauris lorem, pharetra vitae mollis in, gravida a mi. Sed eu elit vitae lorem vestibulum volutpat eget blandit tortor. Duis dignissim porta dolor, ut porttitor lectus pretium vitae.  Phasellus quis augue ante. Nam tempus egestas consectetur. Praesent nec placerat nisi, non malesuada dolor. Duis malesuada semper lorem, nec feugiat nisl. Nulla facilisi. Sed aliquam ex ut turpis malesuada dignissim. Nam risus mi, dapibus maximus nisl ac, efficitur suscipit ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec malesuada nisl eget faucibus mollis. Nam sit amet mauris a metus euismod porttitor et sed mi. Nunc vel vehicula arcu, eu lacinia odio. Fusce id lacus vel dui blandit maximus id eget neque.  Sed eu porta diam. Nunc vitae egestas diam. Donec semper hendrerit laoreet. Aliquam quis aliquam nulla. Aenean euismod lacus sed pretium scelerisque. Suspendisse mollis arcu at ligula pulvinar, nec elementum velit fermentum. Sed sed mollis ligula, vel eleifend metus. Sed magna metus, tempus ut bibendum at, aliquam at nisi. Integer nec fringilla mauris, vel viverra augue. Morbi eu mi mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Proin molestie ante nec tristique finibus. In hac habitasse platea dictumst. Maecenas sed risus condimentum, feugiat velit ac, dictum erat. Curabitur pharetra ac nulla sed lacinia. Curabitur rutrum dolor vestibulum magna ultrices congue ac sed libero. Nam semper mi a neque ultricies commodo. In condimentum in odio in porttitor. Suspendisse maximus vestibulum nunc, vel gravida dui fermentum eu. Morbi sed orci augue. Praesent dolor justo, cursus sit amet ex et, posuere mattis lorem. Donec in efficitur orci. Nam semper odio a interdum aliquet. Vivamus vitae luctus purus, in fermentum diam. Pellentesque quis orci vitae est placerat faucibus. Maecenas non gravida ipsum, sit amet ultrices sem. Phasellus fringilla ultrices erat, vel aliquam sapien varius ac.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam porta semper sapien. Pellentesque volutpat porta sapien, ut tristique metus. In hac habitasse platea dictumst. Aenean pharetra molestie dapibus. Nunc sed dolor elit. Quisque eget enim non tellus volutpat mollis a id dolor. Aenean sit amet sem sem. Nunc viverra efficitur lorem. Quisque quis metus dictum, mattis ante non, pellentesque sapien. Integer quis lectus feugiat, consectetur nulla quis, viverra nulla. Curabitur eu sodales nisl. Morbi non enim pellentesque, lobortis est id, dignissim mauris. Nulla et tempor lectus.</string>
+    <string name="action_example_scrolling_search_bar">scrolling behavior</string>
+    <string name="afroshoptitle">Afroshop</string>
+
+    <plurals name="likes_count">
+        <item quantity="one">%d like</item>
+        <item quantity="other">%d likes</item>
+    </plurals>
+    <string name="title_activity_user_profil">user_profilActivity</string>
+    <string name="title_activity_user__profil">user_ProfilActivity</string>
+    <string name="tab_text_1">Information</string>
+    <string name="tab_text_2">Achats</string>
+    <string name="tab_text_3">Mes Commandes </string>
+    <string name="title_activity_listes_desproduits">ListesDesproduits</string>
+    <string name="titre_du_produits">Titre du Produits</string>
+    <string name="textview">TextView</string>
+    <string name="plus_de_10000_commandes">plus de 10000 commandes</string>
+    <string name="todo">TODO</string>
+    <string name="disponible">Disponible</string>
+    <string name="prix_produits">1500FCFA</string>
+    <string name="option">option</string>
+    <string name="nombreDejaime">+5</string>
+    <string name="erreur_download_image">Desole le telechargement de l\'image a echoue</string>
+    <string name="progress_dialog_appel_service_web">Veuillez patienter...</string>
+    <string name="connexion_echoue">Desole. Vos informations de connexion sont incorrectes.</string>
+    <string name="choixnormalisation">Produit Normalisé</string>
+    <string name="quantite">Quantite</string>
+    <string name="libelle">Libelle</string>
+    <string name="prix_unitaire">Prix unitaire</string>
+    <string name="text_ajouter_au_panier">Ajouter au panier</string>
+    <string name="modifer_un_produit_du_panier">Modifier votre produit</string>
+    <string name="erreur_volley">Erreur lors de l\'appel du service</string>
+    <string name="alert_dialog_modifier_produit_message">Modifier votre produit du panier</string>
+    <string name="ajouter_panier_message">Ajouter votre produit au panier en ajoutant ses parametres</string>
+    <string name="titre_mode_paiement_dialog">Modes de paiement</string>
+    <string name="paiement_espece">Paiement en espèce</string>
+    <string name="paiement_electronique">Paiement éléctronique</string>
+    <string name="agence_bancaire">Agences Bancaire Valides</string>
+    <string name="title_activity_liste_commande">ListeCommandeActivity</string>
+    <string name="titre_commande">Commandes</string>
+    <string name="agences_titre">Agences de livraison</string>
+    <string name="erreur_service_web">Erreur dans le service web</string>
+    <string name="erreur_reponse_service_web">Erreur service web</string>
+</resources>

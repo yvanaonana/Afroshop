@@ -1,0 +1,54 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_twitter"
+            android:id="@+id/login_social_twitter"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/twitter_account"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_google"
+            android:id="@+id/login_social_google"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/google_account"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_facebook"
+            android:id="@+id/login_social_facebook"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/facebook_account"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_social_linkedin"
+            android:id="@+id/login_social_linkedin"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/linked_account"
+            />
+
+    </LinearLayout>
+
+</merge>

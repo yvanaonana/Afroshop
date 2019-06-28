@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1042811900508",
+    "firebase_url": "https://afro-shop-21fe8.firebaseio.com",
+    "project_id": "afro-shop-21fe8",
+    "storage_bucket": "afro-shop-21fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042811900508:android:4262350d676b7ed4",
+        "android_client_info": {
+          "package_name": "com.tsafack.tkswif.afroshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042811900508-dvc837dlv47mubp7js0j9kineldp79jt.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1042811900508-dvc837dlv47mubp7js0j9kineldp79jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD61mf-vMgaf0tvJ8jWRQrn3g_RW_egLmo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

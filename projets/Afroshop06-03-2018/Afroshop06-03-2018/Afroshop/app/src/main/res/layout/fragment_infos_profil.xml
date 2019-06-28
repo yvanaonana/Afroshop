@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsafack.tkswif.afroshop.gestionDesUtilisateurs.activities.profil_utilisateur">
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:layout_marginTop="15dp"
+           android:layout_weight="0.31"
+           android:layout_marginBottom="15dp"
+           android:orientation="vertical"
+           android:background="#E0F7FA"
+           >
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingLeft="25dp"
+               tools:ignore="RtlSymmetry">
+
+               <ImageView
+
+                   android:id="@+id/ic_login"
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:layout_marginTop="10dp"
+
+                   android:src="@drawable/user" />
+
+               <EditText
+                   android:id="@+id/et_profilLogin"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_toRightOf="@+id/ic_login"
+
+                   android:enabled="false"
+                   android:maxLines="1"
+                   android:paddingLeft="15dp"
+                   android:text="kalikane"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+
+                   />
+
+
+           </RelativeLayout>
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:paddingLeft="25dp">
+
+               <ImageView
+
+                   android:id="@+id/ic_email"
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:layout_marginTop="10dp"
+
+                   android:src="@drawable/menu" />
+
+               <EditText
+                   android:id="@+id/et_profilEmail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="7dp"
+                   android:layout_toRightOf="@+id/ic_email"
+
+
+                   android:enabled="false"
+                   android:maxLines="1"
+                   android:paddingLeft="15dp"
+                   android:text="kanewadel33@gmail.com"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+
+                   />
+
+
+           </RelativeLayout>
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:paddingLeft="25dp">
+
+               <ImageView
+
+                   android:id="@+id/ic_password"
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:layout_marginTop="10dp"
+
+                   android:src="@drawable/password_48px_2" />
+
+               <EditText
+                   android:id="@+id/et_profilPassword"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_toRightOf="@+id/ic_password"
+                   android:enabled="false"
+                   android:inputType="textPassword"
+                   android:maxLines="1"
+                   android:paddingLeft="15dp"
+                   android:text="kalikane"
+                   android:textStyle="bold"
+
+
+                   />
+
+               <CheckBox
+                   android:id="@+id/cb_showpass"
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginEnd="49dp"
+                   android:layout_marginRight="49dp"
+                   android:layout_marginTop="10dp" />
+
+
+           </RelativeLayout>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="20dp"
+               android:gravity="center_horizontal">
+
+               <Button
+
+                   android:id="@+id/bt_edit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/buttonstyle"
+                   android:text="Edit"
+                   android:textColor="#fff"
+                   android:textSize="18sp"
+
+                   android:textStyle="bold" />
+
+               <Button
+
+                   android:id="@+id/bt_save"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_toRightOf="@+id/bt_edit"
+                   android:background="@drawable/buttonstyle"
+                   android:text="Save"
+                   android:textColor="#fff"
+
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+
+                   android:visibility="invisible" />
+           </RelativeLayout>
+
+       </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+   </FrameLayout>

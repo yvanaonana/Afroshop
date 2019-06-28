@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="Annuler"
+        android:id="@+id/annuler"/>
+    <item
+        android:title="tchater"
+        android:id="@+id/tchater"/>
+    <item
+        android:title="Payer"
+        android:id="@+id/payer"/>
+</menu>

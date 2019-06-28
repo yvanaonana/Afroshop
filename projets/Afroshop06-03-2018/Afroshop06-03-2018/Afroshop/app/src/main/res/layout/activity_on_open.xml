@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsafack.tkswif.afroshop.OnOpenActivity"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:paddingTop="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/afroshop"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:id="@+id/text_principal"
+        android:elevation="2dp"
+        android:layout_marginTop="220dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blanclogo"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_principal"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/commencer"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:id="@+id/start"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© Copyright TK Swift Service of Software Development"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/copyright"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/copyright">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_twitter"
+            android:id="@+id/login_social_twitter"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/twitter_account"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_google"
+            android:id="@+id/login_social_google"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/google_account"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_social_facebook"
+            android:id="@+id/login_social_facebook"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/facebook_account"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_social_linkedin"
+            android:id="@+id/login_social_linkedin"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/linked_account"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/cardView">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_articlecommande_image"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/guest_male"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/item_articlecommande_libelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                tools:text="Titre de l'intrant"
+                android:layout_above="@+id/item_articlecommande_description"
+                android:layout_alignLeft="@+id/item_articlecommande_description"
+                android:layout_alignStart="@+id/item_articlecommande_description" />
+
+            <TextView
+                android:id="@+id/item_articlecommande_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="45dp"
+                android:text="TextViewTextViTextViewTextViewTextViewTextV"
+                android:layout_toRightOf="@+id/item_articlecommande_image"
+                android:layout_alignBottom="@+id/item_articlecommande_option" />
+
+
+            <ImageView
+                android:id="@+id/item_articlecommande_option"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/menus2_98px" />
+
+            <TextView
+                android:id="@+id/item_articlecommande_mentioncommande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_articlecommande_option"
+                android:layout_alignStart="@+id/item_articlecommande_option"
+                android:layout_below="@+id/item_articlecommande_option"
+                android:paddingTop="5dp"
+                android:text=" En Cours "
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

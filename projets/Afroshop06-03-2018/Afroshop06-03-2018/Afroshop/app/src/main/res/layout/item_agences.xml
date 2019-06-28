@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/item_listeagences_view_status"
+                android:src="@drawable/guest_male"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/item_listeagences_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="buca voyage"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/item_listeagences_view_status"
+                android:textColor="@color/colorGray"/>
+            <ImageView
+                android:id="@+id/item_listeagences_view_telephone"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone"
+                android:layout_below="@+id/item_listeagences_nom"
+                android:layout_toRightOf="@+id/item_listeagences_view_status"
+                android:layout_toEndOf="@+id/item_listeagences_view_status"/>
+            <TextView
+                android:id="@+id/item_listeagences_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_listeagences_view_telephone"
+                android:text="+237 694 576 654"
+                android:textSize="17sp"
+                android:layout_below="@+id/item_listeagences_nom"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/item_listeagences_view_email"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/email_64px"
+                android:layout_below="@+id/item_listeagences_view_telephone"
+                android:layout_toEndOf="@+id/item_listeagences_view_status"
+                android:layout_toRightOf="@+id/item_listeagences_view_status"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:id="@+id/item_listeagences_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_listeagences_view_email"
+                android:layout_below="@+id/item_listeagences_telephone"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:text="yvanaonana@gmail.com"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

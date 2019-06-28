@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fab_drawable_tint"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            card_view:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/relLay">
+
+                        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/Listview_itemImageProduits"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@+id/Listview_OptionMenu"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginStart="11dp"
+                            android:src="@mipmap/ic_launcher"
+                            app:riv_border_color="@color/colorTransparent"
+                            app:riv_corner_radius="3dip"
+                            app:riv_corner_radius_bottom_left="5dip"
+                            app:riv_corner_radius_bottom_right="5dip"
+                            app:riv_corner_radius_top_left="5dip"
+                            app:riv_corner_radius_top_right="5dip"
+                            app:riv_tile_mode="clamp" />
+                        <LinearLayout
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@id/Listview_itemImageProduits"
+                            android:id="@+id/linearText"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            >
+
+                                <TextView
+                                    android:id="@+id/Listview_titreDuProduits"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/titre_du_produits"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/Listview_CategoriesProduits"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/textview" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/LikeButtonImageItemProduitd"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            app:srcCompat="@drawable/ic_heart_outline_grey"
+                                            />
+
+                                        <TextSwitcher
+                                            android:id="@+id/Listview_tsLikesCounter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:inAnimation="@anim/slide_in_likes_counter"
+                                            android:outAnimation="@anim/slide_out_likes_counter">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginEnd="19dp"
+                                                    android:layout_marginRight="19dp"
+                                                    android:text="@string/nombreDejaime"
+                                                    android:textColor="@color/vertPlaystore"
+                                                    android:textSize="12sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="@color/vertPlaystore" />
+                                        </TextSwitcher>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_below="@+id/linearText"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                        <Button
+                                            android:id="@+id/Listview_ButtonAcheterProduits"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="right"
+                                            android:background="@drawable/buttonstyle"
+                                            android:layout_marginRight="15dp"
+                                            android:padding="15dp"
+                                            android:drawableLeft="@drawable/mon_panier"
+                                            android:drawableTint="@color/white"
+                                            android:text=" 1500FCFA"
+                                            android:textColor="@color/white"
+                                            app:srcCompat="@drawable/mon_panier"
+                                            app:targetApi="m" />
+
+                                </LinearLayout>
+
+
+                        </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="-8dp"
+                 android:layout_below="@id/linearText"
+                 android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/AfficherNombreDeCommandesAffectue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/plus_de_10000_commandes" />
+
+                     <TextView
+                         android:id="@+id/Listview_etat_produits"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:layout_gravity="right"
+                         android:layout_marginTop="-20dp"
+                         android:layout_marginRight="15dp"
+                         android:text="@string/disponible"
+                         android:textColor="@color/vertPlaystore"
+                         android:layout_alignParentRight="true" />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/Listview_OptionMenu"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_toLeftOf="@+id/relLay"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="12dp"
+                            app:srcCompat="@drawable/ic_more_grey"
+                            android:contentDescription="@string/option"
+                            app:ignore="NotSibling" />
+
+                </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>

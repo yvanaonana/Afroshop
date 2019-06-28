@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsafack.tkswif.afroshop.gestionDesUtilisateurs.activities.InscriptionActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/inscription"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#8000"
+                    android:layout_marginTop="13dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/utiliser_un_compte_existant"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:layout_marginBottom="13dp"
+                    />
+
+                <include layout="@layout/social_login_layout"
+                    android:id="@+id/socialLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginRight="2sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="#a000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ou"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="#a000"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/cr_er_un_compte_afro_shop"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Type Utilisateur*"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="18sp"
+                        />
+                    <Spinner
+                        android:id="@+id/inscription_input_type_utilisateur"
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Groupe Utilisateur*"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="18sp"
+                        />
+                    <Spinner
+                        android:id="@+id/inscription_input_groupe_utilisateur"
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/inscription_input_layout_nom"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nom"
+                            android:inputType="text"
+                            android:id="@+id/inscription_input_nom"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:ellipsize="end"
+                            android:textColorHint="@color/colorGray"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/inscription_input_layout_prenom"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prenom"
+                            android:inputType="text"
+                            android:id="@+id/inscription_input_prenom"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:ellipsize="end"
+                            android:textColorHint="@color/colorGray"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inscription_input_layout_dateNaissance"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/date_de_naissance"
+                        android:editable="false"
+                        android:inputType="date"
+                        android:clickable="true"
+                        android:id="@+id/inscription_input_dateNaissance"
+                        android:textColorHint="@color/colorGray"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inscription_input_layout_telephone"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/num_ro_de_t_l_phone"
+                        android:inputType="phone"
+                        android:id="@+id/inscription_input_telephone"
+                        android:maxLines="1"
+                        android:maxLength="9"
+                        android:ellipsize="end"
+                        android:textColorHint="@color/colorGray"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Pays*"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="18sp"
+                        />
+                    <Spinner
+                        android:id="@+id/inscription_input_pays"
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Region*"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp" />
+                    <Spinner
+                        android:id="@+id/inscription_input_region"
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/inscription_input_layout_ville"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/ville"
+                            android:inputType="text"
+                            android:id="@+id/inscription_input_ville"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:ellipsize="end"
+                            android:textColorHint="@color/colorGray"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/inscription_input_layout_localite"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/localit"
+                            android:inputType="text"
+                            android:id="@+id/inscription_input_localite"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:ellipsize="end"
+                            android:textColorHint="@color/colorGray"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inscription_input_layout_email"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/inscription_input_email"
+                        android:maxLines="1"
+                        android:maxLength="32"
+                        android:ellipsize="end"
+                        android:textColorHint="@color/colorGray"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inscription_input_layout_password"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mot_de_passe0"
+                        android:inputType="textPassword"
+                        android:id="@+id/inscription_input_password"
+                        android:maxLines="1"
+                        android:maxLength="32"
+                        android:ellipsize="end"
+                        android:textColorHint="@color/colorGray"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inscription_input_layout_confirmPassword"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirmez_votre_mot_de_passe"
+                        android:inputType="textPassword"
+                        android:id="@+id/inscription_input_confirmPassword"
+                        android:maxLines="1"
+                        android:maxLength="32"
+                        android:ellipsize="end"
+                        android:textColorHint="@color/colorGray"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/champs_obligatoires"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorOrange"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/inscription_input_submit"
+                    android:text="@string/s_inscrire"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="18dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/en_vous_inscivant_vous_acceptez_de_respecter"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/nos_termes_et_contions_d_utilisation"
+                    android:textColor="@color/colorAccent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#8000"
+                    android:layout_marginTop="18dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/d_j_un_compte"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connexion"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/inscription_linkTo_connexion"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

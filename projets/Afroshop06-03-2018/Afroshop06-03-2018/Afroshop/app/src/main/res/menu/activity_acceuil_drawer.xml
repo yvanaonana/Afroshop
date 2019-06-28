@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Mon Compte">
+            <menu>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout_rounded_up_98px"
+                    android:title="Déconnexion" />
+            </menu>
+        </item>
+        <!--item
+            android:id="@+id/bibliotheques"
+            android:icon="@drawable/book_98px"
+            android:title="Bibliothèques" />
+        <item
+            android:id="@+id/financement"
+            android:icon="@drawable/coins_98px"
+            android:title="Financement" /-->
+        <item
+            android:id="@+id/Mes_produits"
+            android:icon="@drawable/product_98px"
+            android:title="Mes Produits " />
+        <item
+            android:id="@+id/Mes_intrants"
+            android:icon="@drawable/grass_98px"
+            android:title="Mes intrants" />
+        <item
+            android:id="@+id/Mes_commandes"
+            android:icon="@drawable/message_98px"
+            android:title="Mes Commandes" />
+        <!--item
+            android:id="@+id/formations"
+            android:icon="@drawable/book_98px"
+            android:title="Formations" /-->
+
+    </group>
+
+    <item android:title="Autres">
+        <menu>
+            <item
+                android:id="@+id/parametre"
+                android:icon="@drawable/settings_98px"
+                android:title="Paramètres" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/help_98px"
+                android:title="Aide" />
+            <item
+                android:id="@+id/Nous_ecrire"
+                android:icon="@drawable/speech_bubble_98px"
+                android:title="Nous Ecrire" />
+            <item
+                android:id="@+id/quitter"
+                android:icon="@drawable/shutdown_98px"
+                android:title="Quitter Afroshop" />
+        </menu>
+    </item>
+
+</menu>
