@@ -191,7 +191,7 @@
 
                 </LinearLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <!--android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/inscription_input_layout_dateNaissance"
@@ -209,7 +209,7 @@
                         android:textColorHint="@color/colorGray"
                         />
 
-                </android.support.design.widget.TextInputLayout>
+                </android.support.design.widget.TextInputLayout-->
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"

@@ -42,7 +42,7 @@ public class InscriptionActivity extends AppCompatActivity {
 
     EditText inputNom;
     EditText inputPrenom;
-    EditText inputDateNaissance;
+//    EditText inputDateNaissance;
     EditText inputEmail;
     EditText inputTelephone;
     EditText inputemail;
@@ -60,7 +60,7 @@ public class InscriptionActivity extends AppCompatActivity {
 
     String nom;
     String prenom;
-    String dateNaissance;
+//    String dateNaissance;
     String email;
     String telephone;
     String password;
@@ -97,7 +97,7 @@ public class InscriptionActivity extends AppCompatActivity {
         });
 
         inputNom = (EditText) findViewById(R.id.inscription_input_nom);
-        inputDateNaissance = (EditText) findViewById(R.id.inscription_input_dateNaissance);
+//        inputDateNaissance = (EditText) findViewById(R.id.inscription_input_dateNaissance);
         inputEmail = (EditText) findViewById(R.id.inscription_input_email);
         inputPrenom = (EditText) findViewById(R.id.inscription_input_prenom);
         inputTelephone = (EditText) findViewById(R.id.inscription_input_telephone);
@@ -151,7 +151,7 @@ public class InscriptionActivity extends AppCompatActivity {
             if (passwordConfirm.equals(password)){
                 HashMap<String, String> values = new HashMap<>();
                 values.put(ClesCommunicationServeur.NOM_UTILISATEUR, nom + " " + prenom);
-                values.put(ClesCommunicationServeur.DATE_NAISSANCE_UTILISATEUR, dateNaissance);
+//                values.put(ClesCommunicationServeur.DATE_NAISSANCE_UTILISATEUR, dateNaissance);
                 values.put(ClesCommunicationServeur.ID_UTILISATEUR, email);
                 values.put(ClesCommunicationServeur.TELEPHONE_UTILISATEUR, telephone);
                 values.put(ClesCommunicationServeur.PAYS_UTILISATEUR, pays);
@@ -188,7 +188,7 @@ public class InscriptionActivity extends AppCompatActivity {
     private void initVariables() {
         nom = inputNom.getText().toString().trim();
         prenom = inputPrenom.getText().toString().trim();
-        dateNaissance = inputDateNaissance.getText().toString().trim();
+//        dateNaissance = inputDateNaissance.getText().toString().trim();
         email = inputEmail.getText().toString().trim();
         telephone = inputTelephone.getText().toString().trim();
         pays = inputPays.getSelectedItem().toString().trim();
@@ -220,7 +220,8 @@ public class InscriptionActivity extends AppCompatActivity {
 
     private boolean testEmpty (){
         return !nom.isEmpty() && !nom.equalsIgnoreCase("") && !prenom.isEmpty() && !prenom.equalsIgnoreCase("") &&
-                !dateNaissance.isEmpty() && !dateNaissance.equalsIgnoreCase("") && !email.isEmpty() &&
+//                !dateNaissance.isEmpty() && !dateNaissance.equalsIgnoreCase("") &&
+                !email.isEmpty() &&
                 !email.equalsIgnoreCase("") && !telephone.isEmpty() && !telephone.equalsIgnoreCase("") &&
                 !pays.isEmpty() && !pays.equalsIgnoreCase("") && !localite.isEmpty() && !localite.equalsIgnoreCase("") &&
                 !region.isEmpty() && !region.equalsIgnoreCase("") && !ville.isEmpty() && !ville.equalsIgnoreCase("") &&

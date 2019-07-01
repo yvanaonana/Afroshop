@@ -47,7 +47,7 @@ public abstract class AppelServiceWeb {
         //Toast.makeText(context, ActionsRequettes.TRAITEMENT + action +"/"+ sessionManager.getUser().getIdUtilisateur(), Toast.LENGTH_LONG).show();
 
         String id = values.get("id");
-         URL = ActionsRequettes.TRAITEMENT + action;
+        URL = ActionsRequettes.TRAITEMENT + action;
         if(isIdUser){
             URL = ActionsRequettes.TRAITEMENT + action +"/"+ sessionManager.getUser().getIdUtilisateur() + "/" + id;
         }

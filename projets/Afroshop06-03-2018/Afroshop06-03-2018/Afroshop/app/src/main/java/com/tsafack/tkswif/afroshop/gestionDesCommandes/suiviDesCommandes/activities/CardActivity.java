@@ -83,20 +83,20 @@ public class CardActivity extends AppCompatActivity {
 //
 //    //*****************************************************************************************//
 //
-//    AddToCardAdapter adapter;
-//    List<ArticleCommande> articleCommandes = new ArrayList<>();
+    AddToCardAdapter adapter;
+    List<ArticleCommande> articleCommandes = new ArrayList<>();
     ListView listView;
     TextView outputPrixTotal;
     FloatingActionButton commander;
     Resources res;
 //
-//    SharePreferenceCart preferenceCart;
-//    List<ArticlePanier> articlesInCart;
-//    double prixTotal;
-//
-//    private int nombreArticlePanier = 0;
-//
-//    @Override
+    SharePreferenceCart preferenceCart;
+    List<ArticlePanier> articlesInCart;
+    double prixTotal;
+
+    private int nombreArticlePanier = 0;
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card);
@@ -113,49 +113,49 @@ public class CardActivity extends AppCompatActivity {
 //        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
 //        startService(intent);
     }
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//
-//        preferenceCart = new SharePreferenceCart(CardActivity.this);
-//        articlesInCart = preferenceCart.retrieveArticlesFromCart();
-//
-//        prixTotal = 0;
-//        adapter = new AddToCardAdapter(this, (ArrayList<ArticlePanier>) articlesInCart);
-//        listView.setAdapter(adapter);
-//        listView.setItemChecked(1, true);
-//        for (ArticlePanier articlePanier : articlesInCart) {
-//            prixTotal = prixTotal + articlePanier.getPrixUnitaireArticlePanier() * articlePanier.getQuantiteArticlePanier();
-//        }
-//
-//        outputPrixTotal.setText("Prix Total : " + prixTotal + " XAF");
-//
-//        final double finalPrixTotal = prixTotal;
-//        commander.setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("ResourceAsColor")
-//            @Override
-//            public void onClick(View view) {
-////                Intent intent = new Intent(CardActivity.this, PaiementActivity.class);
-////                intent.putExtra(Extra.ARTICLE_PANIER, finalPrixTotal);
-////                startActivity(intent);
-//
-//                LayoutInflater factory = LayoutInflater.from(CardActivity.this);
-//                final View view1 = factory.inflate(R.layout.dialog_choix_paiement, null);
-//                RadioGroup radioGroup = (RadioGroup) view1.findViewById(R.id.choixpaiement_checkbox_group);
-//
-//
-//                @SuppressLint("ResourceType") final AlertDialog alertDialog = new AlertDialog.Builder(CardActivity.this)
-//                        .setTitle(res.getString(R.string.titre_mode_paiement_dialog))
-//                        .setView(view1)
-//                        .setIcon(R.drawable.ic_payment_settings)
-//                        .setNegativeButton(res.getString(R.string.annuler), null)
-//                        .create();
-//                alertDialog.show();
-//
-//                radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-//                    @Override
-//                    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        preferenceCart = new SharePreferenceCart(CardActivity.this);
+        articlesInCart = preferenceCart.retrieveArticlesFromCart();
+
+        prixTotal = 0;
+        adapter = new AddToCardAdapter(this, (ArrayList<ArticlePanier>) articlesInCart);
+        listView.setAdapter(adapter);
+        listView.setItemChecked(1, true);
+        for (ArticlePanier articlePanier : articlesInCart) {
+            prixTotal = prixTotal + articlePanier.getPrixUnitaireArticlePanier() * articlePanier.getQuantiteArticlePanier();
+        }
+
+        outputPrixTotal.setText("Prix Total : " + prixTotal + " XAF");
+
+        final double finalPrixTotal = prixTotal;
+        commander.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View view) {
+//                Intent intent = new Intent(CardActivity.this, PaiementActivity.class);
+//                intent.putExtra(Extra.ARTICLE_PANIER, finalPrixTotal);
+//                startActivity(intent);
+
+                LayoutInflater factory = LayoutInflater.from(CardActivity.this);
+                final View view1 = factory.inflate(R.layout.dialog_choix_paiement, null);
+                RadioGroup radioGroup = (RadioGroup) view1.findViewById(R.id.choixpaiement_checkbox_group);
+
+
+                @SuppressLint("ResourceType") final AlertDialog alertDialog = new AlertDialog.Builder(CardActivity.this)
+                        .setTitle(res.getString(R.string.titre_mode_paiement_dialog))
+                        .setView(view1)
+                        .setIcon(R.drawable.ic_payment_settings)
+                        .setNegativeButton(res.getString(R.string.annuler), null)
+                        .create();
+                alertDialog.show();
+
+                radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                        if (radioGroup.getCheckedRadioButtonId() == R.id.choixpaiement_checkbox_paiementelectronique) {
 //                            PayPalPayment thingToBuy = getThingToBuy(PayPalPayment.PAYMENT_INTENT_SALE);
 //
@@ -172,26 +172,26 @@ public class CardActivity extends AppCompatActivity {
 //
 //                            startActivityForResult(intent, REQUEST_CODE_PAYMENT);
 //                        }
-//                        if (radioGroup.getCheckedRadioButtonId() == R.id.choixpaiement_checkbox_paiementespece) {
-//                            LayoutInflater factory = LayoutInflater.from(CardActivity.this);
-//                            final View view = factory.inflate(R.layout.list_agence_bancaire, null);
-//                            ListView listAgence = (ListView) view.findViewById(R.id.listagencebancaire_listView);
-//                            GestionCommande gestionCommande = new GestionCommande(CardActivity.this);
-//                            final ArrayList<AgenceBancaire> agenceBancaires = gestionCommande.listerAgencesBancaire(listAgence, view);
-//                            listAgence.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                                @Override
-//                                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                                    passerCommande(agenceBancaires.get(i).getLoginAgenceBancaire(), false);
-//                                    alertDialog.dismiss();
-//                                }
-//                            });
-//                        }
-//                    }
-//                });
-//
-//            }
-//        });
-//    }
+                        if (radioGroup.getCheckedRadioButtonId() == R.id.choixpaiement_checkbox_paiementespece) {
+                            LayoutInflater factory = LayoutInflater.from(CardActivity.this);
+                            final View view = factory.inflate(R.layout.list_agence_bancaire, null);
+                            ListView listAgence = (ListView) view.findViewById(R.id.listagencebancaire_listView);
+                            GestionCommande gestionCommande = new GestionCommande(CardActivity.this);
+                            final ArrayList<AgenceBancaire> agenceBancaires = gestionCommande.listerAgencesBancaire(listAgence, view);
+                            listAgence.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                                    passerCommande(agenceBancaires.get(i).getLoginAgenceBancaire(), false);
+                                    alertDialog.dismiss();
+                                }
+                            });
+                        }
+                    }
+                });
+
+            }
+        });
+    }
 //
 //
 //    private PayPalPayment getThingToBuy(String paymentIntent) {
@@ -320,30 +320,30 @@ public class CardActivity extends AppCompatActivity {
 //                .show();
 //    }
 //
-//    public void passerCommande(String loginAgenceBancaire, boolean payer) {
-//
-//        List<ArticleCommande> articleCommandeList = new ArrayList<>();
-//        for (ArticlePanier articlePanier : articlesInCart) {
-//            ArticleCommande articleCommande = new ArticleCommande();
-//            articleCommande.setIdAgent(articlePanier.getIdAgent());
-//            articleCommande.setIdFournisseurArticle(articlePanier.getIdFournisseurArticle());
-//            articleCommande.setQteArticleCommande(articlePanier.getQuantiteArticlePanier());
-//            articleCommande.setRefArticle(articlePanier.getRefArticle());
-//            SessionManager sessionManager = new SessionManager(CardActivity.this);
-//            articleCommande.setIdClient(sessionManager.getUser().getIdUtilisateur());
-//            articleCommandeList.add(articleCommande);
-//        }
-//
-//        CommandePanier commandePanier = new CommandePanier(loginAgenceBancaire, payer, articleCommandeList);
-//        Gson gson;
-//        GsonBuilder builder = new GsonBuilder();
-//        gson = builder.create();
-//        String articleCommandes = gson.toJson(commandePanier);
-//        GestionCommande gestionCommande = new GestionCommande(CardActivity.this);
-//        gestionCommande.enregisterCommande(articleCommandes);
-//        Intent intent = new Intent(CardActivity.this, ListeCommandeActivity.class);
-//        startActivity(intent);
-//    }
+    public void passerCommande(String loginAgenceBancaire, boolean payer) {
+
+        List<ArticleCommande> articleCommandeList = new ArrayList<>();
+        for (ArticlePanier articlePanier : articlesInCart) {
+            ArticleCommande articleCommande = new ArticleCommande();
+            articleCommande.setIdAgent(articlePanier.getIdAgent());
+            articleCommande.setIdFournisseurArticle(articlePanier.getIdFournisseurArticle());
+            articleCommande.setQteArticleCommande(articlePanier.getQuantiteArticlePanier());
+            articleCommande.setRefArticle(articlePanier.getRefArticle());
+            SessionManager sessionManager = new SessionManager(CardActivity.this);
+            articleCommande.setIdClient(sessionManager.getUser().getIdUtilisateur());
+            articleCommandeList.add(articleCommande);
+        }
+
+        CommandePanier commandePanier = new CommandePanier(loginAgenceBancaire, payer, articleCommandeList);
+        Gson gson;
+        GsonBuilder builder = new GsonBuilder();
+        gson = builder.create();
+        String articleCommandes = gson.toJson(commandePanier);
+        GestionCommande gestionCommande = new GestionCommande(CardActivity.this);
+        gestionCommande.enregisterCommande(articleCommandes);
+        Intent intent = new Intent(CardActivity.this, ListeCommandeActivity.class);
+        startActivity(intent);
+    }
 //
 //    @Override
 //    public void onDestroy() {

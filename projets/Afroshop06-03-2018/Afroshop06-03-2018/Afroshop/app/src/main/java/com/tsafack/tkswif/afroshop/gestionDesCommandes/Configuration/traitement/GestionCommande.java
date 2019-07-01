@@ -66,6 +66,7 @@ public class GestionCommande {
         AppelServiceWeb appelServiceWeb = new AppelServiceWeb() {
             @Override
             public void postExecute(String response) {
+                Toast.makeText(context, response, Toast.LENGTH_LONG).show();
                 SharePreferenceCart preferenceCart = new SharePreferenceCart(context);
                 preferenceCart.deleteAllArticleOfCart();
             }
@@ -92,7 +93,8 @@ public class GestionCommande {
             @Override
             public void postExecute(String response) {
                 try {
-                    JSONArray array = new JSONArray(response);
+                    JSONObject objectFirst = new JSONObject(response);
+                    JSONArray array = objectFirst.getJSONArray("data");
                     for (int i = 0 ; i<array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
                         CommamdeCustom commamdeCustom = new CommamdeCustom();
@@ -149,7 +151,8 @@ public class GestionCommande {
             @Override
             public void postExecute(String response) {
                 try {
-                    JSONArray array = new JSONArray(response);
+                    JSONObject objectFirst = new JSONObject(response);
+                    JSONArray array = objectFirst.getJSONArray("data");
                     for (int i = 0 ; i<array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
                         CommamdeCustom commamdeCustom = new CommamdeCustom();
@@ -200,21 +203,22 @@ public class GestionCommande {
         final ArrayList<String> nomAgences = new ArrayList<>();
 
         HashMap<String, String> values = new HashMap<>();
-        values.put(ClesCommunicationServeur.REGION_ARTICLE, region);
+//        values.put(ClesCommunicationServeur.REGION_ARTICLE, region);
 
         AppelServiceWeb appelServiceWeb = new AppelServiceWeb() {
             @Override
             public void postExecute(String response) {
                 try {
-                    JSONArray array = new JSONArray(response);
+                    JSONObject objectFirst = new JSONObject(response);
+                    JSONArray array = objectFirst.getJSONArray("data");
                     for (int i = 0 ;i<array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
 
                         Agence agence = new Agence();
-                        agence.setIdAgence(object.getString(ClesCommunicationServeur.ID_AGENCE));
-                        agence.setNomAgence(object.getString(ClesCommunicationServeur.NOM_AGENCE));
-                        agence.setTelephoneAgence(object.getString(ClesCommunicationServeur.TELEPHONE_AGENCE));
-                        agence.setEmailAgence(object.getString(ClesCommunicationServeur.EMAIL_AGENCE));
+                        agence.setIdAgence(object.getString(ClesCommunicationServeur.ID_UTILISATEUR));
+                        agence.setNomAgence(object.getString(ClesCommunicationServeur.NOM_UTILISATEUR));
+                        agence.setTelephoneAgence(object.getString(ClesCommunicationServeur.TELEPHONE_UTILISATEUR));
+                        agence.setEmailAgence(object.getString(ClesCommunicationServeur.EMAIL_UTILISATEUR));
                         agences.add(agence);
                         nomAgences.add(agence.getNomAgence());
                     }
@@ -244,16 +248,17 @@ public class GestionCommande {
             @Override
             public void postExecute(String response) {
                 try {
-                    JSONArray array = new JSONArray(response);
+                    JSONObject objectFirst = new JSONObject(response);
+                    JSONArray array = objectFirst.getJSONArray("data");
 
                     for (int i = 0; i<array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
 
                         Agent agent = new Agent();
-                        agent.setIdAgent(object.getString(ClesCommunicationServeur.ID_AGENT));
-                        agent.setNomAgent(object.getString(ClesCommunicationServeur.NOM_AGENT));
-                        agent.setTelephoneAgent(object.getString(ClesCommunicationServeur.TELEPHONE_AGENT));
-                        nomAgents.add(object.getString(ClesCommunicationServeur.NOM_AGENT));
+                        agent.setIdAgent(object.getString(ClesCommunicationServeur.ID_UTILISATEUR));
+                        agent.setNomAgent(object.getString(ClesCommunicationServeur.NOM_UTILISATEUR));
+                        agent.setTelephoneAgent(object.getString(ClesCommunicationServeur.TELEPHONE_UTILISATEUR));
+                        nomAgents.add(object.getString(ClesCommunicationServeur.NOM_UTILISATEUR));
                         agents.add(agent);
                     }
                     ArrayAdapter adapter = new ArrayAdapter(context, R.layout.support_simple_spinner_dropdown_item, nomAgents);
@@ -284,12 +289,14 @@ public class GestionCommande {
             @Override
             public void postExecute(String response) {
                 try {
-                    JSONArray array = new JSONArray(response);
+                    JSONObject objectFirst = new JSONObject(response);
+                    JSONArray array = objectFirst.getJSONArray("data");
                     for (int i = 0; i < array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
                         AgenceBancaire agenceBancaire = new AgenceBancaire();
-                        agenceBancaire.setLoginAgenceBancaire(object.getString(ClesCommunicationServeur.LOGIN_AGENCE_BANCAIRE));
-                        agenceBancaire.setNomAgenceBancaire(object.getString(ClesCommunicationServeur.NOM_AGENCE_BANCAIRE));
+                        JSONObject object1 = object.getJSONObject("user");
+                        agenceBancaire.setLoginAgenceBancaire(object1.getString(ClesCommunicationServeur.ID_UTILISATEUR));
+                        agenceBancaire.setNomAgenceBancaire(object1.getString(ClesCommunicationServeur.NOM_UTILISATEUR));
 
                         noms.add(agenceBancaire.getNomAgenceBancaire());
                         agenceBancaires.add(agenceBancaire);
@@ -311,7 +318,7 @@ public class GestionCommande {
 
 
         };
-        appelServiceWeb.appelService(context, ActionsRequettes.ACTION_LISTER_AGENCE_BANCAIRE, values, Request.Method.POST, true);
+        appelServiceWeb.appelService(context, ActionsRequettes.ACTION_CHOISIR_AGENCE, values, Request.Method.POST, true);
 
         return agenceBancaires;
     }
