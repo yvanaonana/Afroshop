@@ -99,7 +99,7 @@ public abstract class AppelServiceWeb {
                     }
                 }
                 Log.i("Error", errorMessage);
-                Toast.makeText(context, errorMessage, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, errorMessage + error.toString(), Toast.LENGTH_LONG).show();
                 error.printStackTrace();
             }
         })
