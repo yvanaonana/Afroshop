@@ -199,11 +199,11 @@ public class GestionArticle {
                             article.setRegionArticle(object.getString(ClesCommunicationServeur.REGION_ARTICLE));
                             article.setVilleArticle(object.getString(ClesCommunicationServeur.VILLE_ARTICLE));
                             article.setQuartierArticle(ClesCommunicationServeur.LOCALITE_ARTICLE);
-                            if(object.getInt(ClesCommunicationServeur.AIME_ARTICLE) == 1){
-                                article.setAimeArticle(true);
-                            }
-                            else
-                                article.setAimeArticle(false);
+//                            if(object.getInt(ClesCommunicationServeur.AIME_ARTICLE) == 1){
+//                                article.setAimeArticle(true);
+//                            }
+//                            else
+//                                article.setAimeArticle(false);
 //                        article.setQteRestanteArticle(object.getDouble(ClesCommunicationServeur.QTE_ARTICLE_COMMANDE));
                             //maintenant il reste a recuperer les images d'un produit. cela peut etre donne par un objet JSON a
                             //part entiere

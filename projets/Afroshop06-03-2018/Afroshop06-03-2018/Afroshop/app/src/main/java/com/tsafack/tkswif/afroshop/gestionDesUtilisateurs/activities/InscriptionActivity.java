@@ -166,7 +166,9 @@ public class InscriptionActivity extends AppCompatActivity {
                     public void postExecute(String response) {
 
 //                        signUpUserWithFirebase(nom, email, password);
-
+                        Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(intent);
                     }
 
                 };
